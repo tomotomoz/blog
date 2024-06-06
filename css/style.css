@@ -72,20 +72,21 @@ a:hover {
   width: 100%;
   height: 100vh;
   opacity: 1;
-  transition: opacity 0.8s ease;
+  transition: opacity 0.5s ease-in-out;
 }
 .fade .fade-logo{
 position: absolute;
 top: 40%;
 left: 50%;
 transform: translate(-50%, -50%);
-width: 400px;
+width: 300px;
 }
 .fade.close{
   opacity: 0;
   visibility: hidden;
-  transition: 1.5s;
+  transition: 1s ease-in-out;
   transform: scale(3);
+  
 }
 
 .header {

@@ -3,5 +3,5 @@ const fade = document.querySelector('.fade')
 document.addEventListener('DOMContentLoaded',function(){
   setTimeout(() => {
     fade.classList.add('close')
-  }, 1000);
+  }, 500);
 })
