@@ -20,6 +20,24 @@ a:hover {
   opacity: 0.7;
 }
 
+/* コンテンツタイトル（pick up,最近の投稿） */
+.content-title{
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 18px;
+}
+.content-title::before{
+  content:'';
+  display: inline-block;
+  width: 7px;
+  height: 24px;
+  background-color: #333;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+}
+
 /* コンテンツレイアウト */
 .wrapper {
   max-width: 1250px;
@@ -137,13 +155,16 @@ h1 a .logo {
   justify-content: space-between;
   gap: 23px;
   margin-bottom: 70px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 40px;
 }
 
 .pickup-article {
   text-align: center;
+
 }
 
-.pickup-article h2 {
+.pickup-article h3 {
   text-align: left;
   margin: 10px 0 20px;
   font-size: 1rem;
@@ -168,7 +189,7 @@ h1 a .logo {
   margin-bottom: 75px;
 }
 
-.main-article h2 {
+.main-article h3 {
   font-size: 1.5rem;
 }
 
@@ -329,6 +350,10 @@ h1 a .logo {
     overflow-x: scroll;
   }
 
+  .nav-ul {
+    justify-content: center;
+  }
+
   .fade .fade-logo {
     width: 300px;
   }
@@ -348,12 +373,18 @@ h1 a .logo {
 
   .grid {
     grid-template-columns: auto;
+   
   }
-
-  .section-aside {
-    margin-bottom: 30px;
+.resent-posts{
+  border-bottom: 1px solid #333;
+}
+  .aside {
+    display: flex;
+    flex-direction: column;
   }
-
+.author{
+  order: 3;
+}
   .main-list p {
     margin-left: 0;
   }
